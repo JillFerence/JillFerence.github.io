@@ -1,0 +1,83 @@
+/* ============================================= */
+/* DEFAULT */
+/* ============================================= */
+
+/* Consistent styles */
+:root {
+    --primary-color: rgba(255, 255, 255, 1);
+    --secondary-color: rgba(116,100,221,1);
+    --transparent-color: rgba(33,37,41,1);
+    --default-font: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --transition: 0.4s;
+}
+
+/* CSS resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Smooth page navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Removes default list style */
+ul {
+    list-style-type: none;
+}
+
+/* ============================================= */
+/* NAVIGATION */
+/* ============================================= */
+
+/* Navigation bar */
+#navigation {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--transparent-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+#navigation ul {
+    display: flex;
+    gap: 1.9rem;
+}
+
+/* Navigation links */
+#navigation .nav-link {
+    color: var(--primary-color);
+    font-family: var(--default-font);
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+    transition: var(--transition);
+}
+
+#navigation .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Navigation menu */
+#navigation .nav-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
