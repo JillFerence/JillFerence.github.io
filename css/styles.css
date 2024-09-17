@@ -7,7 +7,7 @@
     --primary-color: rgba(255, 255, 255, 1);
     --secondary-color: rgba(116,100,221,1);
     --transparent-color: rgba(33,37,41,1);
-    --default-font: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --default-font: "Montserrat", sans-serif;
     --transition: 0.4s;
 }
 
@@ -81,3 +81,41 @@ ul {
     display: none;
 }
 
+/* ============================================= */
+/* HOME */
+/* ============================================= */
+
+/* Home background image */
+#home {
+    height: 100vh;
+    padding-top: 18rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: var(--primary-color);
+    background-image: url("../assets/img/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Home headers */
+#home .home-heading {
+    font-size: 3.25rem;
+    font-weight: 750;
+    line-height: 3.25rem;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px #2c3034;
+    letter-spacing: 0.4rem;
+    font-family: var(--default-font);
+}
+
+#home .home-subheading {
+    font-size: 1.5rem;
+    font-weight: 150;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px #2c3034;
+    font-family: var(--default-font);
+}
