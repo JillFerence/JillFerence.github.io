@@ -6,8 +6,12 @@
 :root {
     --primary-color: rgba(255, 255, 255, 1);
     --secondary-color: rgba(116,100,221,1);
-    --transparent-color: rgba(33,37,41,1);
-    --default-font: "Montserrat", sans-serif;
+    --grey-text: rgba(108,117,125,1);
+    --grey-heading:rgba(33,37,41,1);
+    --medium-background: rgba(33,37,41,1);
+    --dark-background: rgba(2,2,4,1);
+    --heading-font: "Montserrat", sans-serif;
+    --text-font: "PT Serif", serif;
     --transition: 0.4s;
 }
 
@@ -33,6 +37,44 @@ ul {
     list-style-type: none;
 }
 
+/* Section heading */
+.section-heading {
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    color: var(--grey-heading);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+/* Text */
+.text {
+    font-size: 0.8rem;
+    font-weight: 50;
+    font-family: var(--text-font);
+    line-height: 23px;
+    letter-spacing: 0.3px;
+}
+
+/* Social buttons */
+.social-button{
+    height: 2rem;
+    width: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+    background-color: var(--grey-text)
+}
+
+.social-button ion-icon{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
 /* ============================================= */
 /* NAVIGATION */
 /* ============================================= */
@@ -47,7 +89,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--transparent-color);
+    background-color: var(--medium-background);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -59,7 +101,7 @@ ul {
 /* Navigation links */
 #navigation .nav-link {
     color: var(--primary-color);
-    font-family: var(--default-font);
+    font-family: var(--heading-font);
     padding: 0.75rem;
     font-size: 0.95rem;
     text-transform: uppercase;
@@ -108,7 +150,7 @@ ul {
     margin-bottom: 1rem;
     text-shadow: 3px 3px #2c3034;
     letter-spacing: 0.4rem;
-    font-family: var(--default-font);
+    font-family: var(--heading-font);
 }
 
 #home .home-subheading {
@@ -117,5 +159,64 @@ ul {
     line-height: 1.5rem;
     margin-bottom: 25px;
     text-shadow: 2px 2px #2c3034;
-    font-family: var(--default-font);
+    font-family: var(--heading-font);
+}
+
+/* ============================================= */
+/* ABOUT */
+/* ============================================= */
+
+#about {
+    background-color: var(--dark-background);
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* About headings */
+#about .about-heading{
+    color: var(--grey-heading);
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#about .about-subheading{
+    color: var(--grey-text);
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* About profile image */
+#about .about-img{
+    width: 11rem;
+    height: 11rem;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+/* About sections */
+#about .about-container{
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    max-width: 60%; 
+    margin: 0 auto;
+}
+
+#about .about-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex: 1;
+    padding-right: 20px;
+    color: var(--grey-text);
+}
+
+#about .about-text{
+    color: var(--grey-text);
+    flex: 2; 
+    padding-left: 20px;
+    text-align: left;
 }
