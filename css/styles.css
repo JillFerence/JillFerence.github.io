@@ -4,14 +4,22 @@
 
 /* Consistent styles */
 :root {
-    --primary-color: rgba(255, 255, 255, 1);
-    --secondary-color: rgba(116,100,221,1);
-    --grey-text: rgba(108,117,125,1);
-    --grey-heading:rgba(33,37,41,1);
-    --medium-background: rgba(33,37,41,1);
-    --dark-background: rgba(2,2,4,1);
+    --white: rgba(255, 255, 255, 1);
+    --purple: rgba(116,100,221,1);
+    --light-grey: rgba(229,229,229, 1);
+    --grey: rgba(108,117,125,1);
+    --dark-grey:rgba(33,37,41,1);
+    
+    --grey-background: rgba(33,37,41,1);
+    --black-background: rgba(2,2,4,1);
+    --blue-background: rgba(18,30,46,1);
+    --purple-background: rgba(51,36,63,1);
+
+    --shadow: rgba(0, 0, 0, 0.2);
+
     --heading-font: "Montserrat", sans-serif;
     --text-font: "PT Serif", serif;
+
     --transition: 0.4s;
 }
 
@@ -44,13 +52,13 @@ ul {
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
-    color: var(--grey-heading);
     padding-top: 100px;
     padding-bottom: 50px;
 }
 
 /* Text */
 .text {
+    color: var(--grey);
     font-size: 0.8rem;
     font-weight: 50;
     font-family: var(--text-font);
@@ -58,8 +66,23 @@ ul {
     letter-spacing: 0.3px;
 }
 
-/* Social buttons */
-.social-button{
+.heading {
+    font-family: var(--heading-font);
+    color: var(--dark-grey);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.subheading{
+    font-family: var(--heading-font);
+    color: var(--grey);
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Icons */
+.icon{
     height: 2rem;
     width: 2rem;
     display: inline-flex;
@@ -67,11 +90,8 @@ ul {
     justify-content: center;
     padding: 0;
     border-radius: 100%;
-    background-color: var(--grey-text)
-}
-
-.social-button ion-icon{
-    color: var(--primary-color);
+    background-color: var(--grey);
+    color: var(--white);
     font-size: 20px;
 }
 
@@ -89,7 +109,7 @@ ul {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--medium-background);
+    background-color: var(--grey-background);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -100,7 +120,7 @@ ul {
 
 /* Navigation links */
 #navigation .nav-link {
-    color: var(--primary-color);
+    color: var(--white);
     font-family: var(--heading-font);
     padding: 0.75rem;
     font-size: 0.95rem;
@@ -110,12 +130,12 @@ ul {
 }
 
 #navigation .nav-link:hover {
-    color: var(--secondary-color);
+    color: var(--purple);
 }
 
 /* Navigation menu */
 #navigation .nav-menu {
-    color: var(--primary-color);
+    color: var(--white);
     font-size: 2rem;
     border: 0;
     background-color: transparent;
@@ -133,7 +153,7 @@ ul {
     padding-top: 18rem;
     padding-bottom: 6rem;
     text-align: center;
-    color: var(--primary-color);
+    color: var(--white);
     background-image: url("../assets/img/background.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -167,25 +187,14 @@ ul {
 /* ============================================= */
 
 #about {
-    background-color: var(--dark-background);
+    background-color: var(--black-background);
     text-align: center;
     padding-bottom: 100px;
 }
 
-/* About headings */
-#about .about-heading{
-    color: var(--grey-heading);
-    font-family: var(--heading-font);
-    font-size: 1.25rem;
-    font-weight: 600;
-}
-
-#about .about-subheading{
-    color: var(--grey-text);
-    font-family: var(--heading-font);
-    font-size: 1rem;
-    margin-top: 5px;
-    margin-bottom: 10px;
+/* About section heading */
+#about .section-heading{
+    color: var(--dark-grey);
 }
 
 /* About profile image */
@@ -211,12 +220,97 @@ ul {
     align-items: center; 
     flex: 1;
     padding-right: 20px;
-    color: var(--grey-text);
+    color: var(--grey);
 }
 
 #about .about-text{
-    color: var(--grey-text);
+    color: var(--grey);
     flex: 2; 
     padding-left: 20px;
     text-align: left;
+}
+
+/* ============================================= */
+/* EDUCATION */
+/* ============================================= */
+
+/* Education page */
+#education {
+    background: linear-gradient(to bottom, var(--blue-background), var(--purple-background));
+    text-align: center;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+/* Education section heading */
+#education .section-heading{
+    color: var(--white);
+}
+
+/* Timeline page */
+#education .timeline {
+    width: 100%;
+    max-width: 800px;
+    background: var(--white);
+    padding: 100px 50px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0.5rem 0.5rem 2rem 0 var(--shadow);
+}
+
+/* Timeline line */
+#education .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: calc(33% + 15px);
+    bottom: 0px;
+    width: 1px;
+    background: var(--light-grey);
+}
+
+#education .timeline:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#education .icon {
+    position: absolute;
+    left: 30.5%;
+    top: 15%;
+}
+
+/* Timeline entry */
+#education .timeline-item {
+    clear: both;
+    text-align: left;
+    position: relative;
+}
+
+/* Timeline text */
+#education .timeline-title {
+    float: left;
+    width: 33%;
+    padding-right: 30px;
+    text-align: right;
+    position: relative;
+}
+
+#education .timeline-body {
+    margin: 0 0 3em;
+    float: right;
+    width: 66%;
+    padding-left: 30px;
+}
+
+#education .timeline-body ul {
+    padding-left: 20px;
+    list-style-type: circle;
 }
