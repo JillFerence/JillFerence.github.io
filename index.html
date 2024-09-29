@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <!-- Page initialization -->
         <meta charset="utf-8" />
         <title>Jill Ference's Personal Website</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <!-- CSS -->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- JavaScript-->
+        <script src="js/init.js"></script>
     </head>
+    
     <body>
         <!-- ============================================= -->
         <!-- NAVIGATION -->
@@ -20,12 +22,12 @@
         <nav class="navigation" id="navigation">
             <!-- Navigation links -->
             <ul>
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#education">Education</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#skills">Skills</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
             <!-- Navigation menu -->
             <button class="nav-menu" id="nav-menu">
@@ -49,16 +51,18 @@
         <section class="about" id="about">
             <div class="section-heading">About</div>
             <div class="about-container">
+                <!-- About details -->
                 <div class="about-details">
                     <img class="about-img" src="assets/img/profile.jpg"/>
-                    <div class="heading about-heading">Jill Ference</div>
-                    <div class="subheading about-subheading">Computer Science Student</div>
+                    <div class="heading">Jill Ference</div>
+                    <div class="subheading">Computer Science Student</div>
                     <div>
                         <a class="icon" href="https://github.com/JillFerence" aria-label="Jill Ference GitHub Profile"><ion-icon name="logo-github"></ion-icon></a>
                         <a class="icon" href="https://www.linkedin.com/in/jill-f-28923a1b0/" aria-label="Jill Ference LinkedIn Profile"><ion-icon name="logo-linkedin"></ion-icon></a>
                         <a class="icon" href="#!" aria-label="Jill Ference Email"><ion-icon name="mail-outline"></ion-icon></a>
                     </div>
                 </div>
+                <!-- About description -->
                 <div class="text about-text">
                     I am a Master of Visual Computing student in the Master of Professional Computer Science program at Simon Fraser University. 
                     I graduated from the University of Alberta in Computing Science and Chemistry in 2024. 
@@ -74,6 +78,7 @@
         <div class="education" id="education">
             <div class="section-heading">Education</div>
             <div class="timeline">
+                <!-- Education item 1 -->
                 <div class="timeline-item">
                     <div class="icon">
                         <ion-icon name="book"></ion-icon>
@@ -91,6 +96,7 @@
                         </ul>
                     </div>
                 </div>
+                <!-- Education item 2 -->
                 <div class="timeline-item">
                     <div class="icon">
                         <ion-icon name="book"></ion-icon>
@@ -106,6 +112,167 @@
                             <li>line2</li>
                             <li>line3</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================= -->
+        <!-- PROJECTS -->
+        <!-- ============================================= -->
+        <div class="projects" id="projects">
+            <div class="section-heading">Projects</div>
+            <div class="project-grid">
+
+                <!-- Project item 1 -->
+                <div class="project-item">
+                    <img src="assets/img/modal.png" alt="Image 1" class="project-modal-trigger1" />
+                    <h1 class="heading">QRConnect App</h1>
+                    <p class="subheading">Android App Development</p>
+                </div>
+                <!-- Project item 2 -->
+                <div class="project-item">
+                    <img src="assets/img/modal.png" alt="Image 2" class="project-modal-trigger2" />
+                    <h1 class="heading">Personal Website</h1>
+                    <p class="subheading">Web Development</p>
+                </div>
+                <!-- Project item 3 -->
+                <div class="project-item">
+                    <img src="assets/img/modal.png" alt="Image 3" class="project-modal-trigger3" />
+                    <h1 class="heading">Image Reconstruction</h1>
+                    <p class="subheading">Visual Computing</p>
+                </div>
+                <!-- Project item 4 -->
+                <div class="project-item">
+                    <img src="assets/img/modal.png" alt="Image 4" class="project-modal-trigger4" />
+                    <h1 class="heading">Image Blending</h1>
+                    <p class="subheading">Visual Computing</p>
+                </div>
+                <!-- Project item 5 -->
+                <div class="project-item">
+                    <img src="assets/img/modal.png" alt="Image 5" class="project-modal-trigger5" />
+                    <h1 class="heading">Algorithm Visualizer</h1>
+                    <p class="subheading">Algorithm Visualizer</p>
+                </div>
+                <!-- Project item 6 -->
+                <div class="project-item">
+                    <img src="assets/img/modal.png" alt="Image 6" class="project-modal-trigger6" />
+                    <h1 class="heading">Client-Server Program</h1>
+                    <p class="subheading">FIFO & Sockets</p>
+                </div>
+            </div>
+
+            <!-- Modal popup for project item 1 -->
+            <div id="project-modal1" class="modal">
+                <div class="modal-content">
+                    <img src="assets/img/modal1.png" alt="Image 6" />
+                    <h1 class="heading">QRConnect App</h1>
+                    <p class="text">
+                        iOS app that displays user health diagnosis info 
+                        from breath analysis. Included features are daily info display, display 
+                        option customization, showing other's info, and sharing one's health info.
+                    </p>
+                    <p class="languages">Javascript, CSS, HTML</p>
+                    <div class="modal-footer">
+                        <a class="modal-link" href="https://github.com/JillFerence">Details</a>
+                        <div class="close">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal popup for project item 2 -->
+            <div id="project-modal2" class="modal">
+                <div class="modal-content">
+                    <img src="assets/img/modal1.png" alt="Image 6" />
+                    <h1 class="heading">Personal Website</h1>
+                    <p class="text">
+                        iOS app that displays user health diagnosis info 
+                        from breath analysis. Included features are daily info display, display 
+                        option customization, showing other's info, and sharing one's health info.
+                    </p>
+                    <p class="languages">Javascript, CSS, HTML</p>
+                    <div class="modal-footer">
+                        <a class="modal-link" href="https://github.com/JillFerence">Details</a>
+                        <div class="close">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal popup for project item 3 -->
+            <div id="project-modal3" class="modal">
+                <div class="modal-content">
+                    <img src="assets/img/modal1.png" alt="Image 6" />
+                    <h1 class="heading">Image Reconstruction</h1>
+                    <p class="text">
+                        iOS app that displays user health diagnosis info 
+                        from breath analysis. Included features are daily info display, display 
+                        option customization, showing other's info, and sharing one's health info.
+                    </p>
+                    <p class="languages">Javascript, CSS, HTML</p>
+                    <div class="modal-footer">
+                        <a class="modal-link" href="https://github.com/JillFerence">Details</a>
+                        <div class="close">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal popup for project item 4 -->
+            <div id="project-modal4" class="modal">
+                <div class="modal-content">
+                    <img src="assets/img/modal1.png" alt="Image 6" />
+                    <h1 class="heading">Image Blending</h1>
+                    <p class="text">
+                        iOS app that displays user health diagnosis info 
+                        from breath analysis. Included features are daily info display, display 
+                        option customization, showing other's info, and sharing one's health info.
+                    </p>
+                    <p class="languages">Javascript, CSS, HTML</p>
+                    <div class="modal-footer">
+                        <a class="modal-link" href="https://github.com/JillFerence">Details</a>
+                        <div class="close">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal popup for project item 5 -->
+            <div id="project-modal5" class="modal">
+                <div class="modal-content">
+                    <img src="assets/img/modal1.png" alt="Image 6" />
+                    <h1 class="heading">Algorithm Visualizer</h1>
+                    <p class="text">
+                        iOS app that displays user health diagnosis info 
+                        from breath analysis. Included features are daily info display, display 
+                        option customization, showing other's info, and sharing one's health info.
+                    </p>
+                    <p class="languages">Javascript, CSS, HTML</p>
+                    <div class="modal-footer">
+                        <a class="modal-link" href="https://github.com/JillFerence">Details</a>
+                        <div class="close">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal popup for project item 6 -->
+            <div id="project-modal6" class="modal">
+                <div class="modal-content">
+                    <img src="assets/img/modal1.png" alt="Image 6" />
+                    <h1 class="heading">Client-Server Program</h1>
+                    <p class="text">
+                        iOS app that displays user health diagnosis info 
+                        from breath analysis. Included features are daily info display, display 
+                        option customization, showing other's info, and sharing one's health info.
+                    </p>
+                    <p class="languages">Javascript, CSS, HTML</p>
+                    <div class="modal-footer">
+                        <a class="modal-link" href="https://github.com/JillFerence">Details</a>
+                        <div class="close">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
