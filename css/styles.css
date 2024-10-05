@@ -474,3 +474,69 @@ ul {
     color: var(--purple);
     cursor: pointer;
 }
+
+/* ============================================= */
+/* SKILLS */
+/* ============================================= */
+
+/* Skils layout */
+.skills {
+    background: linear-gradient(to bottom, var(--blue-background), var(--purple-background));
+    padding-bottom: 100px;
+}
+
+#skills .skill-item {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    max-width: 60%; 
+    margin: 0 auto;
+}
+
+#skills .skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex: 1;
+}
+
+#skills .skill-text {
+    flex: 2; 
+    text-align: left;
+}
+  
+/* Skills icon */
+#skills .skills-wrapper img {
+    background: transparent;
+}
+  
+#skills .icon {
+    width: 7rem;
+    height: 7rem;
+    
+}
+
+/* Skills text */
+#skills .section-heading{
+    color: var(--white);
+} 
+
+#skills .heading{
+    color: var(--white);
+    padding-top: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+#skills .subheading{
+        color: var(--white);
+}
+
+#skills ul {
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+#skills p {
+    text-align: center;
+}
