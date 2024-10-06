@@ -9,12 +9,16 @@
     --light-grey: rgba(229,229,229, 1);
     --grey: rgba(108,117,125,1);
     --dark-grey:rgba(33,37,41,1);
-    --blue: rgb(100,154,201);
+    --blue: rgba(100,154,201,1);
     
     --grey-background: rgba(33,37,41,1);
     --black-background: rgba(2,2,4,1);
-    --blue-background: rgba(18,30,46,1);
+    --blue-background-old: rgba(18,30,46,1);
     --purple-background: rgba(51,36,63,1);
+
+    --green-background: rgb(12,60,48);
+    --blue-background: rgb(7, 39, 68);
+    --dark-green-background: rgba(5,11,11,1);
     --transparent-background: rgba(33,37,41,0.75); 
 
     --shadow: rgba(0, 0, 0, 0.2);
@@ -164,7 +168,7 @@ ul {
     padding-bottom: 6rem;
     text-align: center;
     color: var(--white);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, rgb(5,11,11) 100%),
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, var(--dark-green-background) 100%),
     url("../assets/img/background.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -196,8 +200,7 @@ ul {
 /* ============================================= */
 
 #about {
-    background-color: rgb(5,11,11);
-    text-align: center;
+    background-color: var(--dark-green-background);
     padding-bottom: 100px;
 }
 
@@ -271,7 +274,7 @@ ul {
 
 /* Education page */
 #education {
-    background: linear-gradient(to bottom, var(--blue-background), var(--purple-background));
+    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
     text-align: center;
     padding-bottom: 100px;
     display: flex;
@@ -355,7 +358,7 @@ ul {
 
 /* Projects page */
 #projects {
-    background: linear-gradient(to bottom, var(--purple-background), var(--blue-background));
+    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
     text-align: center;
     padding-bottom: 100px;
 }
@@ -379,11 +382,11 @@ ul {
 /* Projects grid */
 #projects .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
     margin: 20px auto;
-    max-width: 80%;
+    max-width: 60%;
 }
 
 #projects .project-grid img {
@@ -501,7 +504,7 @@ ul {
 
 /* Skils layout */
 .skills {
-    background: linear-gradient(to bottom, var(--blue-background), var(--purple-background));
+    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
     padding-bottom: 100px;
 }
 
@@ -567,7 +570,7 @@ ul {
 
 /* Contact layout */
 .contact {
-    background: linear-gradient(to bottom, var(--blue-background), var(--purple-background));
+    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
     padding-bottom: 100px;
 }
 
@@ -614,7 +617,7 @@ ul {
 /* ============================================= */
 
 .footer {
-    background: var(--black-background);
+    background: var(--dark-green-background);
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
