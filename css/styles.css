@@ -588,3 +588,14 @@ ul {
     width: 5rem;
     font-size: 50px;
 }
+
+/* ============================================= */
+/* Footer */
+/* ============================================= */
+
+.footer {
+    background: var(--black-background);
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
