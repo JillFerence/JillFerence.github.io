@@ -516,7 +516,7 @@ ul {
     
 }
 
-/* Skills text */
+/* Skills text and headings */
 #skills .section-heading{
     color: var(--white);
 } 
@@ -539,4 +539,52 @@ ul {
 
 #skills p {
     text-align: center;
+}
+
+/* ============================================= */
+/* CONTACT */
+/* ============================================= */
+
+/* Contact layout */
+.contact {
+    background: linear-gradient(to bottom, var(--blue-background), var(--purple-background));
+    padding-bottom: 100px;
+}
+
+#contact .contact-container {
+    display: flex;
+    justify-content: center; 
+    max-width: 70%; 
+    margin: 0 auto;
+    align-items: flex-start;
+}
+
+#contact .contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex: 1;
+}
+
+/* Contact text and headings */
+#contact .section-heading{
+    color: var(--white);
+} 
+
+#contact .heading{
+    color: var(--white);
+    padding-top: 25px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#contact .subheading{
+        color: var(--white);
+}
+
+/* Contact icon */
+#contact .icon {
+    height: 5rem;
+    width: 5rem;
+    font-size: 50px;
 }
