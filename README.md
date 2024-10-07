@@ -10,15 +10,24 @@ You can access and explore the website directly through this link: [jillference.
 - **JavaScript**: Used for creating the interactive elements of the website.
 
 ## Sources
-- **HTML, CSS, JavaScript**:  
-  FreeCodeCamp: [How to Build a Developer Portfolio Website](https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/)
+**HTML, CSS, JavaScript**:  
+- FreeCodeCamp: Used for general website layout and design template.
+  <br>[freecodecamp.org/news/how-to-build-a-developer-portfolio-website](https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/)
+- FreeFrontend: Used for CSS templates, specifically timelines.
+  <br>[freefrontend.com](https://freefrontend.com/css-timelines/page/2/)<br>
+- SheCodes: Used for modal popups.
+  <br>[shecodes.io/athena/9950-create-a-modal-popup-using-html-css-javascript](https://www.shecodes.io/athena/9950-create-a-modal-popup-using-html-css-javascript)
 
-- **Fonts**:  
-  Google Fonts: [Google Fonts](https://fonts.google.com/)
+**Fonts**:  
+- Google Fonts: Used for fonts.
+  <br>[fonts.google.com](https://fonts.google.com/)
 
-- **Icons**:  
-  Ionicons: [Ionicons](https://ionic.io/ionicons)  
-  Icons8: [Icons8](https://icons8.com/icons/)
+**Icons**:  
+- Ionicons: Used for social media icons.
+  <br>[ionic.io/ionicons](https://ionic.io/ionicons)
+  
+- Icons8: Use for computer science logos and icons.
+  <br>[icons8.com/icons](https://icons8.com/icons/)
 
 ## Credits
 - **Developer**: Jill Ference  
