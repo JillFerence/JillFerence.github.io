@@ -1,6 +1,6 @@
 # Personal Website
 ## Description
-A professional portfolio website showcasing my academic background, projects, and technical skills in computer science. Built with HTML, CSS, and JavaScript, the site serves as an interactive resume and platform to demonstrate my experience in computer science. 
+A professional portfolio website showcasing my academic background, projects, and technical skills in computer science. Built with HTML, CSS, and JavaScript, the site serves as an interactive resume and platform to demonstrate my knowledge and experience across various areas of computer science. 
 
 You can access and explore the website directly through this link: [jillference.github.io](https://jillference.github.io)
 
