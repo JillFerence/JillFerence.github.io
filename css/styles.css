@@ -293,7 +293,7 @@ ul {
 /* Timeline page */
 #education .timeline {
     width: 100%;
-    max-width: 900px;
+    max-width: 60%;
     background: var(--white);
     padding: 100px 50px;
     position: relative;
