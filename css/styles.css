@@ -293,7 +293,7 @@ ul {
 /* Timeline page */
 #education .timeline {
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     background: var(--white);
     padding: 100px 50px;
     position: relative;
@@ -341,7 +341,7 @@ ul {
 }
 
 #education .timeline-body {
-    margin: 0 0 3em;
+    margin: 0 0 3rem;
     float: right;
     width: 66%;
     padding-left: 30px;
@@ -349,7 +349,16 @@ ul {
 
 #education .timeline-body ul {
     padding-left: 20px;
-    list-style-type: circle;
+    list-style-type: disc;
+}
+
+#education .timeline-body p {
+    font-style: italic;
+}
+
+#education .timeline-body h3 {
+    font-weight: bold;
+    color: var(--dark-grey);
 }
 
 /* ============================================= */
