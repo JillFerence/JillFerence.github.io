@@ -24,7 +24,7 @@
     --shadow: rgba(0, 0, 0, 0.2);
 
     --heading-font: "Montserrat", sans-serif;
-    --text-font: "PT Serif", serif;
+    --text-font: "Nunito Sans", sans-serif;
 
     --transition: 0.4s;
 }
@@ -79,7 +79,6 @@ ul {
 .text {
     color: var(--grey);
     font-size: 0.8rem;
-    font-weight: 50;
     font-family: var(--text-font);
     line-height: 23px;
     letter-spacing: 0.3px;
@@ -218,7 +217,6 @@ ul {
 }
 
 #about .location {
-    font-size: 0.75rem;
     margin-bottom: 15px;
     display: inline-flex;
     align-items: center;
