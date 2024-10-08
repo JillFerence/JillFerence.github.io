@@ -519,26 +519,15 @@ ul {
     padding-bottom: 100px;
 }
 
-#skills .skill-item {
-    display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-    max-width: 60%; 
-    margin: 0 auto;
+#skills .skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 20px auto;
+    max-width: 40%;
 }
 
-#skills .skill-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    flex: 1;
-}
-
-#skills .skill-text {
-    flex: 2; 
-    text-align: left;
-}
-  
 /* Skills icon */
 #skills .skills-wrapper img {
     background: transparent;
@@ -547,7 +536,14 @@ ul {
 #skills .icon {
     width: 7rem;
     height: 7rem;
-    
+}
+
+#skills .icon:hover {
+    transform: scale(1.1);
+}
+
+#skills .skill-item:hover .overlay-text {
+    opacity: 1; 
 }
 
 /* Skills text and headings */
@@ -573,6 +569,12 @@ ul {
 
 #skills p {
     text-align: center;
+}
+
+#skills .overlay-text {
+    color: var(--grey);
+    opacity: 0;
+    transition: var(--transition);
 }
 
 /* ============================================= */
