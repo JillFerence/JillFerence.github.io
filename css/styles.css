@@ -169,7 +169,7 @@ ul {
     text-align: center;
     color: var(--white);
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, var(--dark-green-background) 100%),
-    url("../assets/img/background.jpg");
+    url("../assets/img/home-background.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -391,7 +391,11 @@ ul {
 
 #projects .project-grid img {
     width: 100%;
+    min-width: 200px;
+    min-height: 200px;
     max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
     cursor: pointer;
     transition: transform 0.2s;
     border-radius: 10px;
