@@ -5,23 +5,20 @@
 /* Consistent styles */
 :root {
     --white: rgba(255, 255, 255, 1);
-    --purple: rgba(116,100,221,1);
     --light-grey: rgba(229,229,229, 1);
     --grey: rgba(108,117,125,1);
     --dark-grey:rgba(33,37,41,1);
     --blue: rgba(100,154,201,1);
+    --purple: rgba(116,100,221,1);
     
     --grey-background: rgba(33,37,41,1);
     --black-background: rgba(2,2,4,1);
-    --blue-background-old: rgba(18,30,46,1);
     --purple-background: rgba(51,36,63,1);
 
     --green-background: rgb(12,60,48);
     --blue-background: rgb(7, 39, 68);
     --dark-green-background: rgba(5,11,11,1);
     --transparent-background: rgba(33,37,41,0.75); 
-
-    --shadow: rgba(0, 0, 0, 0.2);
 
     --heading-font: "Montserrat", sans-serif;
     --text-font: "Nunito Sans", sans-serif;
@@ -167,8 +164,7 @@ ul {
     padding-bottom: 6rem;
     text-align: center;
     color: var(--white);
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 75%, var(--dark-green-background) 100%),
-    url("../assets/img/home-background.jpg");
+    background-image: url("../assets/img/home-background.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -267,12 +263,80 @@ ul {
 }
 
 /* ============================================= */
+/* SKILLS */
+/* ============================================= */
+
+/* Skils layout */
+.skills {
+    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
+    padding-bottom: 100px;
+}
+
+#skills .skills-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin: 20px auto;
+    max-width: 40%;
+}
+
+/* Skills icon */
+#skills .skills-wrapper img {
+    background: transparent;
+}
+  
+#skills .icon {
+    width: 7rem;
+    height: 7rem;
+}
+
+#skills .icon:hover {
+    transform: scale(1.05);
+}
+
+#skills .skill-item:hover .overlay-text {
+    opacity: 1; 
+}
+
+/* Skills text and headings */
+#skills .section-heading{
+    color: var(--white);
+} 
+
+#skills .heading{
+    color: var(--white);
+    padding-top: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+#skills .subheading{
+        color: var(--white);
+}
+
+#skills ul {
+    padding-left: 20px;
+    list-style-type: circle;
+}
+
+#skills p {
+    text-align: center;
+}
+
+#skills .overlay-text {
+    color: var(--grey);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+/* ============================================= */
 /* EDUCATION */
 /* ============================================= */
 
 /* Education page */
 #education {
-    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
+    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
     text-align: center;
     padding-bottom: 100px;
     display: flex;
@@ -296,7 +360,6 @@ ul {
     padding: 100px 50px;
     position: relative;
     border-radius: 10px;
-    box-shadow: 0.5rem 0.5rem 2rem 0 var(--shadow);
 }
 
 /* Timeline line */
@@ -365,7 +428,7 @@ ul {
 
 /* Projects page */
 #projects {
-    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
+    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
     text-align: center;
     padding-bottom: 100px;
 }
@@ -406,7 +469,6 @@ ul {
     cursor: pointer;
     transition: transform 0.2s;
     border-radius: 10px;
-    box-shadow: 0.5rem 0.5rem 2rem 0 var(--shadow);
 }
 
 #projects .project-grid img:hover {
@@ -491,7 +553,7 @@ ul {
 }
 
 #projects .modal-link:hover {
-    color: var(--purple);
+    color: var(--bue);
 }
 
 /* Modal footer closer button */
@@ -505,76 +567,8 @@ ul {
 }
 
 #projects .close:hover {
-    color: var(--purple);
+    color: var(--blue);
     cursor: pointer;
-}
-
-/* ============================================= */
-/* SKILLS */
-/* ============================================= */
-
-/* Skils layout */
-.skills {
-    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
-    padding-bottom: 100px;
-}
-
-#skills .skills-wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    margin: 20px auto;
-    max-width: 40%;
-}
-
-/* Skills icon */
-#skills .skills-wrapper img {
-    background: transparent;
-}
-  
-#skills .icon {
-    width: 7rem;
-    height: 7rem;
-}
-
-#skills .icon:hover {
-    transform: scale(1.1);
-}
-
-#skills .skill-item:hover .overlay-text {
-    opacity: 1; 
-}
-
-/* Skills text and headings */
-#skills .section-heading{
-    color: var(--white);
-} 
-
-#skills .heading{
-    color: var(--white);
-    padding-top: 10px;
-    padding-bottom: 25px;
-    text-align: center;
-}
-
-#skills .subheading{
-        color: var(--white);
-}
-
-#skills ul {
-    padding-left: 20px;
-    list-style-type: circle;
-}
-
-#skills p {
-    text-align: center;
-}
-
-#skills .overlay-text {
-    color: var(--grey);
-    opacity: 0;
-    transition: var(--transition);
 }
 
 /* ============================================= */
@@ -625,12 +619,16 @@ ul {
     font-size: 50px;
 }
 
+#contact .icon:hover {
+    transform: scale(1.05);
+}
+
 /* ============================================= */
 /* Footer */
 /* ============================================= */
 
 .footer {
-    background: var(--dark-green-background);
+    background: var(--green-background);
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
