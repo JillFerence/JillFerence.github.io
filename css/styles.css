@@ -9,7 +9,9 @@
     --grey: rgba(108,117,125,1);
     --dark-grey:rgba(33,37,41,1);
     --blue: rgba(100,154,201,1);
+    --dark-blue: rgb(28,69,135);
     --purple: rgba(116,100,221,1);
+    --green: rgb(27, 119, 96);
     
     --grey-background: rgba(33,37,41,1);
     --black-background: rgba(2,2,4,1);
@@ -133,9 +135,19 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     padding: 1rem 3.5rem;
+    background: transparent;
+    z-index: 999;
+}
+
+#navigation.navigation-home {
+    opacity: 0; 
+    transition: opacity 0.4s ease; 
+}
+
+#navigation.navigation-scrolled {
     background-color: var(--transparent-background);
     border-radius: 100px;
-    z-index: 999;
+    transition: opacity 0.8s ease;
 }
 
 #navigation ul {
@@ -148,7 +160,7 @@ ul {
     color: var(--white);
     font-family: var(--heading-font);
     padding: 0.75rem;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 0.0625em;
@@ -156,7 +168,7 @@ ul {
 }
 
 #navigation .nav-link:hover {
-    color: var(--blue);
+    color: var(--green);
 }
 
 /* Navigation menu */

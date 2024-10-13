@@ -1,6 +1,34 @@
 document.addEventListener("DOMContentLoaded", function() {
 
     /* ============================================= */
+    /* NAVIGATION BAR */
+    /* ============================================= */
+
+    // Hide navigation bar when scrolling through the home page 
+    const navigationBar = document.querySelector('#navigation');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            navigationBar.classList.add('navigation-home');
+        }
+        else {
+            navigationBar.classList.remove('navigation-home'); 
+        }
+    });
+
+    // Show the new navigation bar when scrolling past the home page 
+    const aboutSection = document.querySelector('#about');
+    const aboutSectionTop = aboutSection.offsetTop;
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= aboutSectionTop) {
+            navigationBar.classList.remove('navigation-home'); 
+            navigationBar.classList.add('navigation-scrolled');
+        }
+        else {
+            navigationBar.classList.remove('navigation-scrolled'); 
+        }
+    });
+
+    /* ============================================= */
     /* PROJECTS MODALS */
     /* ============================================= */
 
