@@ -17,7 +17,7 @@
 
     --green-background: rgb(12,60,48);
     --blue-background: rgb(7, 39, 68);
-    --dark-green-background: rgba(5,11,11,1);
+    --dark-green-background: rgba(5,11,11,0.75);
     --transparent-background: rgba(33,37,41,0.75); 
 
     --heading-font: "Montserrat", sans-serif;
@@ -50,7 +50,7 @@ ul {
 
 /* Headings */
 .section-heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: var(--heading-font);
     text-transform: uppercase;
     text-align: center;
@@ -61,13 +61,13 @@ ul {
 
 .heading {
     font-family: var(--heading-font);
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .subheading{
     font-family: var(--heading-font);
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -75,32 +75,43 @@ ul {
 /* Text */
 .text {
     color: var(--grey);
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-family: var(--text-font);
-    line-height: 23px;
+    line-height: 25px;
     letter-spacing: 0.3px;
 }
 
 .languages {
     color: var(--grey);
     font-family: var(--heading-font);
-    font-size: 0.65rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 0.0625em;
 }
 
 /* Icons */
-.icon{
-    height: 2rem;
-    width: 2rem;
+.icon {
+    height: 2.5rem;
+    width: 2.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
     border-radius: 100%;
-    background-color: var(--grey);
     color: var(--white);
-    font-size: 20px;
+    font-size: 25px;
+    margin: 2.5px;
+}
+
+.scroll-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: var(--blue);
+    background-color: var(--white);
+    font-size: 25px;
 }
 
 /* ============================================= */
@@ -119,7 +130,6 @@ ul {
     padding: 1rem 3.5rem;
     background-color: var(--transparent-background);
     border-radius: 100px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     z-index: 999;
 }
 
@@ -160,8 +170,7 @@ ul {
 /* Home background image */
 #home {
     height: 100vh;
-    padding-top: 18rem;
-    padding-bottom: 6rem;
+    padding-top: 45vh;
     text-align: center;
     color: var(--white);
     background-image: url("../assets/img/home-background.jpg");
@@ -173,21 +182,31 @@ ul {
 
 /* Home headers */
 #home .home-heading {
-    font-size: 3.25rem;
+    font-size: 5rem;
     font-weight: 750;
     line-height: 3.25rem;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px #2c3034;
+    margin-bottom: 1.5rem;
     letter-spacing: 0.2rem;
     font-family: var(--heading-font);
 }
 #home .home-subheading {
-    font-size: 1.5rem;
-    font-weight: 150;
+    font-size: 1.75rem;
+    font-weight: 250;
     line-height: 1.5rem;
     margin-bottom: 25px;
-    text-shadow: 0.5px 0.5px #2c3034;
     font-family: var(--heading-font);
+}
+
+.scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+  
+.up-arrow {
+    width: 3rem;
+    height: 3rem;
 }
 
 /* ============================================= */
@@ -195,22 +214,21 @@ ul {
 /* ============================================= */
 
 #about {
-    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
-    padding-bottom: 100px;
-    padding-top: 20px;
+    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
+    padding-top: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
     box-sizing: border-box;
 }
 
 #about .about-section {
     background-color: var(--dark-green-background);
-    width: 100%;
-    max-width: 96%;
+    max-width: 80%;
+    max-height: 80%;
     padding-bottom: 100px;
     position: relative;
     border-radius: 10px;
@@ -218,11 +236,12 @@ ul {
 
 /* About headings */
 #about .section-heading {
-    color: var(--dark-grey);
+    color: var(--white);
+    padding-top: 75px;
 }
 
 #about .heading {
-    color: var(--dark-grey);
+    color: var(--white);
 }
 
 #about .subheading {
@@ -236,11 +255,15 @@ ul {
     justify-content: center;
 }
 
-#about .location ion-icon{
+/* About icons */
+#about .icon {
+    color: var(--white);
+}
+
+#about .location .ion-icon{
     height: 1rem;
     width: 1rem;
     font-size: 10px;
-    padding-right: 5px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -252,10 +275,11 @@ ul {
 
 /* About profile image */
 #about .about-img{
-    width: 11rem;
-    height: 11rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
     margin-bottom: 25px;
+    position: center;
 }
 
 /* About sections */
@@ -263,7 +287,7 @@ ul {
     display: flex;
     justify-content: center; 
     align-items: flex-start; 
-    max-width: 80%; 
+    max-width: 75%; 
     margin: 0 auto;
 }
 
@@ -272,14 +296,13 @@ ul {
     flex-direction: column;
     align-items: center; 
     flex: 1;
-    padding-right: 20px;
     color: var(--grey);
 }
 
 #about .about-text{
+    padding-left: 10px;
     color: var(--grey);
     flex: 2; 
-    padding-left: 20px;
     text-align: left;
 }
 
@@ -289,7 +312,7 @@ ul {
 
 /* Skils layout */
 .skills {
-    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
+    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
     padding-bottom: 100px;
 }
 
@@ -308,8 +331,8 @@ ul {
 }
   
 #skills .icon {
-    width: 7rem;
-    height: 7rem;
+    width: 8rem;
+    height: 8rem;
 }
 
 #skills .icon:hover {
@@ -357,7 +380,7 @@ ul {
 
 /* Education page */
 #education {
-    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
+    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
     text-align: center;
     padding-bottom: 100px;
     display: flex;
@@ -377,33 +400,18 @@ ul {
 #education .timeline {
     width: 100%;
     max-width: 60%;
-    background: var(--white);
+    background: rgba(255, 255, 255, 0.75);
     padding: 100px 50px;
     position: relative;
     border-radius: 10px;
 }
 
 /* Timeline line */
-#education .timeline:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: calc(33% + 15px);
-    bottom: 0px;
-    width: 1px;
-    background: var(--light-grey);
-}
-
-#education .timeline:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 #education .icon {
     position: absolute;
-    left: 30.5%;
+    left: 30.75%;
     top: 15%;
+    background-color: var(--grey);
 }
 
 /* Timeline entry */
@@ -417,7 +425,7 @@ ul {
 #education .timeline-title {
     float: left;
     width: 33%;
-    padding-right: 30px;
+    padding-right: 45px;
     text-align: right;
     position: relative;
 }
@@ -441,6 +449,7 @@ ul {
 #education .timeline-body h3 {
     font-weight: bold;
     color: var(--dark-grey);
+    font-size: 1.1rem;
 }
 
 /* ============================================= */
@@ -449,7 +458,7 @@ ul {
 
 /* Projects page */
 #projects {
-    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
+    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
     text-align: center;
     padding-bottom: 100px;
 }
@@ -461,13 +470,13 @@ ul {
 
 #projects .project-grid .heading{
     color: var(--white);
-    font-size: 1rem;
+    font-size: 1.25rem;
     padding-top: 10px;
 }
 
 #projects .subheading{
     color: var(--grey);
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 
 /* Projects grid */
@@ -482,10 +491,10 @@ ul {
 
 #projects .project-grid img {
     width: 100%;
-    min-width: 200px;
-    min-height: 200px;
-    max-width: 200px;
-    max-height: 200px;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.2s;
@@ -521,7 +530,7 @@ ul {
     border-bottom-right-radius: 15px;
     margin: 5% auto;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -541,7 +550,7 @@ ul {
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 #projects .modal-content p {
@@ -567,7 +576,7 @@ ul {
     padding-left: 30px; 
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size: 0.75rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.0625em;
     transition: var(--transition);
@@ -580,7 +589,7 @@ ul {
 /* Modal footer closer button */
 #projects .close {
     color: var(--white);
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     padding-right: 30px; 
     cursor: pointer;
@@ -598,14 +607,14 @@ ul {
 
 /* Contact layout */
 .contact {
-    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
+    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
     padding-bottom: 100px;
 }
 
 #contact .contact-container {
     display: flex;
     justify-content: center; 
-    max-width: 70%; 
+    max-width: 60%; 
     margin: 0 auto;
     align-items: flex-start;
 }
@@ -630,14 +639,15 @@ ul {
 }
 
 #contact .subheading{
-        color: var(--white);
+    color: var(--white);
 }
 
 /* Contact icon */
 #contact .icon {
-    height: 5rem;
-    width: 5rem;
-    font-size: 50px;
+    height: 6rem;
+    width: 6rem;
+    background: transparent;
+    font-size: 60px;
 }
 
 #contact .icon:hover {
@@ -649,7 +659,7 @@ ul {
 /* ============================================= */
 
 .footer {
-    background: var(--green-background);
+    background: var(--blue-background);
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
