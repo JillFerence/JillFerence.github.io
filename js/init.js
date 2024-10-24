@@ -28,6 +28,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    // Navigation bar menu for smaller devices
+    const hamburger = document.getElementById('nav-menu');
+    const sidebar = document.getElementById('sidebar');
+    const closeSidebar = document.getElementById('close-sidebar');
+
+    hamburger.addEventListener('click', () => {
+        sidebar.style.right = '0'; // Open sidebar from the right
+    });
+
+    closeSidebar.addEventListener('click', () => {
+        sidebar.style.right = '-250px'; // Close sidebar to the right
+    });
+
+    // Close sidebar when clicking outside
+    document.addEventListener('click', (event) => {
+        if (sidebar.style.right == '0' && !sidebar.contains(event.target) && event.target !== hamburger) {
+            sidebar.style.right = '-250px'; // Slide out if clicking outside
+        }
+    });
+
     /* ============================================= */
     /* PROJECTS MODALS */
     /* ============================================= */

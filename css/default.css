@@ -1,0 +1,122 @@
+/* ============================================= */
+/* DEFAULT */
+/* ============================================= */
+
+/* Consistent styles */
+:root {
+    --white: rgba(255, 255, 255, 1);
+    --light-grey: rgba(229,229,229, 1);
+    --grey: rgba(108,117,125,1);
+    --dark-grey:rgba(33,37,41,1);
+    --blue: rgba(100,154,201,1);
+    --dark-blue: rgb(28,69,135);
+    --purple: rgba(116,100,221,1);
+    --green: rgb(27, 119, 96);
+    
+    --grey-background: rgba(33,37,41,1);
+    --black-background: rgba(2,2,4,1);
+    --purple-background: rgba(51,36,63,1);
+
+    --green-background: rgb(12,60,48);
+    --blue-background: rgb(7, 39, 68);
+    --dark-green-background: rgba(5,11,11,0.75);
+    --transparent-background: rgba(33,37,41,0.75); 
+
+    --heading-font: "Montserrat", sans-serif;
+    --text-font: "Nunito Sans", sans-serif;
+
+    --transition: 0.4s;
+}
+
+/* CSS resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Smooth page navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+}
+
+/* Removes default list style */
+ul {
+    list-style-type: none;
+}
+
+/* Headings */
+.section-heading {
+    font-size: 3rem;
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.heading {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.subheading{
+    font-family: var(--heading-font);
+    font-size: 1.25rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Text */
+.text {
+    color: var(--grey);
+    font-size: 1rem;
+    font-family: var(--text-font);
+    line-height: 25px;
+    letter-spacing: 0.3px;
+}
+
+.languages {
+    color: var(--grey);
+    font-family: var(--heading-font);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.0625em;
+}
+
+/* Icons */
+.icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    color: var(--white);
+    font-size: 25px;
+    margin: 2.5px;
+}
+
+.scroll-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    background-color: var(--white);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: absolute; 
+    bottom: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    font-size: 2rem; 
+    cursor: pointer; 
+    color: var(--dark-green-background); 
+}

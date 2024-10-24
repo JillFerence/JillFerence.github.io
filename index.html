@@ -3,14 +3,16 @@
 
     <head>
         <!-- Page initialization -->
-        <meta charset="utf-8" />
+        <meta charset="utf-8"/>
         <title>Jill Ference's Personal Website</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <!-- CSS -->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/default.css" rel="stylesheet"/>
+        <link href="css/layout.css" rel="stylesheet"/>
+        <link href="css/media-queries.css" rel="stylesheet"/>
         <!-- JavaScript-->
         <script src="js/init.js"></script>
     </head>
@@ -21,6 +23,7 @@
         <!-- ============================================= -->
         <nav class="navigation" id="navigation">
             <!-- Navigation links -->
+            <div class="nav-name"> Jill Ference</div>
             <ul>
                 <li><a class="nav-link" href="#home">Home</a></li>
                 <li><a class="nav-link" href="#about">About</a></li>
@@ -34,6 +37,20 @@
                 <ion-icon name="menu-outline"></ion-icon>
             </button>
         </nav>
+
+        <div class="sidebar" id="sidebar">
+            <button class="close-sidebar" id="close-sidebar">
+                <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <ul>
+                <li><a class="sidebar-link" href="#home">Home</a></li>
+                <li><a class="sidebar-link" href="#about">About</a></li>
+                <li><a class="sidebar-link" href="#skills">Skills</a></li>
+                <li><a class="sidebar-link" href="#education">Education</a></li>
+                <li><a class="sidebar-link" href="#projects">Projects</a></li>
+                <li><a class="sidebar-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
         
         <!-- ============================================= -->
         <!-- HOME -->
@@ -74,10 +91,14 @@
                     </div>
                     <!-- About description -->
                     <div class="text about-text">
-                        I am a Master of Visual Computing student in the Master of Professional Computer Science program at Simon Fraser University. 
-                        I graduated from the University of Alberta in Computing Science and Chemistry in 2024. 
-                        I have gained relevant knowledge and experience through university courses, computational laboratories, online programs and online certifications, which allowed me to build upon my problem-solving and programming skills in various programming languages. 
-                        My career goal is to assume a role that enables me to design, develop, and analyze software used to solve problems in the interactive entertainment industry.
+                        A passionate and driven software developer currently pursuing my Master’s in Professional Computer Science with a specialization in Visual Computing at Simon Fraser University. I hold a Bachelor of Science in Chemistry and Computing Science from the University of Alberta, where I built a solid foundation in both technical and scientific fields.
+                        
+                        I bring hands-on experience in a wide range of programming languages, frameworks, and tools, including Python, Java, C, SQL, OpenCV, and PyTorch, and have developed successful projects in image processing, web development, and software development.
+
+                        I am an active member of the tech community through my involvement in organizations like Women in Computing Science (WiCS) and the SFU Game Developers Club, where I continually seek to grow and support others. Beyond coding, I enjoy playing co-ed soccer in the SFU Intramural League and exploring the outdoors - my website’s homepage features a picture I took while hiking, one of my favourite ways to stay active and connect with nature.
+
+                        Fluent in both English and French, I am a fast learner with a passion for technology and a deep interest in visual computing, machine learning, and interactive software development.
+
                     </div>
                 </div>
             </div>
@@ -123,9 +144,10 @@
                 </div>
                 <div class="skill-item">
                     <img class="icon" src="assets/icons/riscv.png" alt="RISC-V"/>
-                    <p class="subheading overlay-text">RISC-V Assembly</p>
+                    <p class="subheading overlay-text">RISC-V</p>
+                    <p class="subheading overlay-text">Assembly</p>
                 </div>
-                </div>
+            </div>
         </section>
         
         <!-- ============================================= -->
