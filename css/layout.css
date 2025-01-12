@@ -418,6 +418,12 @@
 }
 
 /* Project headings */
+#projects h1{
+    text-align: center !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 #projects .section-heading{
     color: var(--white);
 }
