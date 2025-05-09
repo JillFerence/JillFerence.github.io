@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function() {
     /* ============================================= */
 
     // Event listener for image to trigger the modal
-    document.querySelectorAll(".project-modal-trigger1, .project-modal-trigger2, .project-modal-trigger3, .project-modal-trigger4, .project-modal-trigger5, .project-modal-trigger6").forEach(function(img) {
+    document.querySelectorAll(".project-modal-trigger1, .project-modal-trigger2, .project-modal-trigger3, .project-modal-trigger4, .project-modal-trigger5, .project-modal-trigger6, .project-modal-trigger7").forEach(function(img) {
         img.addEventListener("click", function() {
             const triggerClass = img.classList[0];
             let modalID;
@@ -77,6 +77,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     break;
                 case "project-modal-trigger6":
                     modalID = "project-modal6";
+                    break;
+                case "project-modal-trigger7":
+                    modalID = "project-modal7";
                     break;
             }
         
