@@ -167,6 +167,7 @@
 
 #about {
     background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
+    padding-top: 25px;
     text-align: center;
     display: flex;
     flex-direction: column;

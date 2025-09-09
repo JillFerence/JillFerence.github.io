@@ -18,8 +18,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Show the new navigation bar when scrolling past the home page 
     const aboutSection = document.querySelector('#about');
     const aboutSectionTop = aboutSection.offsetTop;
+    const navHeight = navigationBar.offsetHeight;
     window.addEventListener('scroll', () => {
-        if (window.scrollY >= aboutSectionTop) {
+        if (window.scrollY >= aboutSectionTop - navHeight) {
             navigationBar.classList.remove('navigation-home'); 
             navigationBar.classList.add('navigation-scrolled');
         }
