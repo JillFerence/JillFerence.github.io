@@ -412,7 +412,7 @@
 
 /* Projects page */
 #projects {
-    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
+    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
     text-align: center;
     padding-bottom: 100px;
 }
@@ -568,7 +568,7 @@
 
 /* Contact layout */
 .contact {
-    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
+    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
     padding-bottom: 100px;
     position: relative;
 }
@@ -621,7 +621,7 @@
 /* ============================================= */
 
 .footer {
-    background: var(--blue-background);
+    background: var(--green-background);
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
