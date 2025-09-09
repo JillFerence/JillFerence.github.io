@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var texts = [
         "Software Engineer...",
-        "Innovating in Computer Vision and Machine Learning...",
+        "Innovating in Machine Learning and Computer Vision...",
         "Former Chemist..."
     ];
 
