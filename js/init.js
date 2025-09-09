@@ -77,10 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 setTimeout(typeWriter, 600); // Pause
             }
         } 
-        else {
-          // After all headings, reveal the body text
-          document.getElementById("about-body").style.display = "block";
-        }
     }
 
     // Begins typewriting only when you are in the about section
