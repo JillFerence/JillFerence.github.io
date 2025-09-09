@@ -49,6 +49,59 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     /* ============================================= */
+    /* ABOUT TYPEWRITER */
+    /* ============================================= */
+
+    var texts = [
+        "Software Engineer...",
+        "Innovating in Computer Vision and Machine Learning...",
+        "Former Chemist..."
+    ];
+
+    var i = 0; // Char index
+    var j = 0; // Text index 
+    var speed = 75; // Typing speed (ms)
+
+    function typeWriter() {
+        if (j < texts.length) {
+            if (i < texts[j].length) {
+                document.getElementById("typewriter").innerHTML += texts[j].charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            } 
+            else {
+                // Add a break after each line and move on to the next
+                document.getElementById("typewriter").innerHTML += "<br><br>";
+                i = 0;
+                j++;
+                setTimeout(typeWriter, 600); // Pause
+            }
+        } 
+        else {
+          // After all headings, reveal the body text
+          document.getElementById("about-body").style.display = "block";
+        }
+    }
+
+    // Begins typewriting only when you are in the about section
+    var started = false;
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !started) {
+                started = true;
+                typeWriter();
+                observer.disconnect(); 
+            }
+        });
+    }, { threshold: 0.3 }); 
+
+    var aboutSectionTypeWriter = document.getElementById("about");
+
+    if (aboutSectionTypeWriter) {
+        observer.observe(aboutSectionTypeWriter);
+    }
+
+    /* ============================================= */
     /* PROJECTS MODALS */
     /* ============================================= */
 
