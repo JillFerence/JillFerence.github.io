@@ -18,7 +18,7 @@ You can access and explore the website directly through this link: [jillference.
 - SheCodes: Used for modal popups.
   <br>[shecodes.io/athena/9950-create-a-modal-popup-using-html-css-javascript](https://www.shecodes.io/athena/9950-create-a-modal-popup-using-html-css-javascript)
 - W3Schools: Used for typewriter.
-  <br>[w3schools.com/howto/howto_js_typewriter.asp]https://www.w3schools.com/howto/howto_js_typewriter.asp
+  <br>[w3schools.com/howto/howto_js_typewriter.asp](https://www.w3schools.com/howto/howto_js_typewriter.asp)
 
 **Fonts**:  
 - Google Fonts: Used for fonts.
