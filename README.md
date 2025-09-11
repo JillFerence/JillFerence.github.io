@@ -32,6 +32,8 @@ You can access and explore the website directly through this link: [jillference.
   
 - Icons8: Use for computer science logos and icons.
   <br>[icons8.com/icons](https://icons8.com/icons/)
+- Tech Icons: Used for computer science logos and icons.
+  <br>[techicons.dev](https://techicons.dev/)
 
 ## Credits
 - **Developer**: Jill Ference  
