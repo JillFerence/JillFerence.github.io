@@ -13,7 +13,7 @@
     transform: translateX(-50%);
     padding: 1rem 3.5rem;
     background: transparent;
-    z-index: 999;
+    z-index: 10;
 }
 
 #navigation.navigation-home {
@@ -82,7 +82,7 @@
     height: 100%;
     background-color: var(--transparent-background); 
     transition: left 0.3s ease;
-    z-index: 999; 
+    z-index: 10; 
 }
 
 #sidebar ul {
@@ -142,6 +142,7 @@
     background-position: center center;
     background-size: cover;
     position: relative;
+    z-index: 9;
 }
 
 /* Home headers */
@@ -233,6 +234,7 @@
     border: 2px solid white;
     margin-bottom: 25px;
     position: center;
+    z-index: 9;
 }
 
 /* About sections */
@@ -279,6 +281,11 @@
 .skills {
     background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
     padding-bottom: 100px;
+}
+
+#skills .skill-item {
+    position: relative;
+    z-index: 9;
 }
 
 #skills .skills-wrapper {
@@ -482,13 +489,14 @@
 
 #projects .project-item {
     text-align: center; 
+    z-index: 9;
 }
 
 /* Modal popup */
 #projects .modal {
     display: none; 
     position: fixed;
-    z-index: 1000;
+    z-index: 9;
     left: 0;
     top: 0;
     width: 100%;
