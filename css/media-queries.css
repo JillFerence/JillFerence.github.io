@@ -405,12 +405,6 @@
         padding-left: 50px;
     }
 
-    /* Project Section */
-    #projects .project-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        max-width: 60%;
-    }
-
     /* Contact Section */
     #contact .contact-container {
         max-width: 65%;
