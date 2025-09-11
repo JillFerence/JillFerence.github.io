@@ -153,4 +153,48 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+
+    /* ============================================= */
+    /* PARTICLES */
+    /* ============================================= */
+
+    /// Create particle effect at mouse
+    const particlesContainer = document.getElementById('particles-container');
+
+    document.addEventListener('mousemove', (e) => {
+        // Mouse position as %
+        const mouseX = (e.clientX / window.innerWidth) * 100;
+        const mouseY = (e.clientY / window.innerHeight) * 100;
+
+        // Create a particle
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+
+        // Random small size
+        const size = Math.random() * 4 + 2;
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+
+        // Place at mouse
+        particle.style.left = `${mouseX}%`;
+        particle.style.top = `${mouseY}%`;
+        particle.style.opacity = '0.6';
+
+        particlesContainer.appendChild(particle);
+
+        // Animate outward + fade
+        setTimeout(() => {
+            particle.style.transition = 'all 2s ease-out';
+            particle.style.left = `${mouseX + (Math.random() * 10 - 5)}%`;
+            particle.style.top = `${mouseY + (Math.random() * 10 - 5)}%`;
+            particle.style.opacity = '0';
+
+            // Remove after animation
+            setTimeout(() => {
+                particle.remove();
+            }, 2000);
+        }, 10);
+    });
+
+
 });
