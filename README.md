@@ -19,6 +19,8 @@ You can access and explore the website directly through this link: [jillference.
   <br>[shecodes.io/athena/9950-create-a-modal-popup-using-html-css-javascript](https://www.shecodes.io/athena/9950-create-a-modal-popup-using-html-css-javascript)
 - W3Schools: Used for typewriter.
   <br>[w3schools.com/howto/howto_js_typewriter.asp](https://www.w3schools.com/howto/howto_js_typewriter.asp)
+- Slider Revolution: Used for particle effects from Moderm Gradient Wave Background.
+  <br>[sliderrevolution.com/resources/css-animated-background/](https://www.sliderrevolution.com/resources/css-animated-background/)
 
 **Fonts**:  
 - Google Fonts: Used for fonts.
