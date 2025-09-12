@@ -95,6 +95,12 @@
         grid-template-columns: 1fr;
         max-width: 90%;
     }
+
+    /* Interests Section */
+    #interests .art-grid {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
     
     /* Contact Section */
     #contact .contact-container {
@@ -201,6 +207,12 @@
         max-width: 80%;
     }
 
+    /* Interests Section */
+    #interests .art-grid {
+        grid-template-columns: 1fr;
+        max-width: 80%;
+    }
+
     /* Contact Section */
     #contact .contact-container {
         flex-direction: column;
@@ -292,6 +304,12 @@
         max-width: 80%;
     }
 
+    /* Interests Section */
+    #interests .art-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 80%;
+    }
+
     /* Contact Section */
     #contact .contact-container {
         max-width: 95%;
@@ -355,6 +373,12 @@
 
     /* Project Section */
     #projects .project-grid {
+        grid-template-columns: 1fr 1fr;
+        max-width: 60%;
+    }
+
+    /* Interests Section */
+    #interests .art-grid {
         grid-template-columns: 1fr 1fr;
         max-width: 60%;
     }
