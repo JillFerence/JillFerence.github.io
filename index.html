@@ -313,47 +313,155 @@
         <!-- ============================================= -->
         <!-- PROJECTS -->
         <!-- ============================================= -->
+
         <div class="projects" id="projects">
+            <div class="section-heading">Projects</div>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">ML / Computer Vision</button>
+                <button class="filter-btn" data-filter="software">Software Dev</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="database">Database</button>
+                <button class="filter-btn" data-filter="other">Algorithm / System</button>
+            </div>
+            <!-- Project 1: PanOSIS -->
+            <div class="project-card" data-category="ml">
+                <div class="project-media">
+                    <img src="assets/projects/panosis.jpg"></img>
+                </div>
+                <div class="project-info">
+                    <a class="icon" href="https://github.com/JillFerence/PanOSIS" aria-label="PanOSIS GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                    <h1 class="heading">PanOSIS - Panoramic One-Shot Image Segmentation</h1>
+                    <p class="languages">Machine Learning & Computer Vision</p>
+                    <p class="text project-description">
+                        PanOSIS is a one-shot image segmentation method designed for panoramic street-view images, addressing the scarcity of annotated datasets and lack of research in this domain. 
+                        It introduces one-shot synthesis to generate training data from a single image-mask pair and adapts conventional models with equirectangular convolutions to account for panoramic distortions, improving segmentation accuracy.
+                    </p>
+                    <p class="languages">Python, PyTorch, NumPy, Matplotlib, 
+                        Vast AI, Visual Studio Code</p>
+                </div>
+            </div>
+            <!-- Project 2: ArchiTech -->
+            <div class="project-card" data-category="ml">
+                <div class="project-media">
+                    <video src="assets/projects/architech.mp4" autoplay muted loop playsinline ></video>
+                </div>
+                <div class="project-info">
+                    <a class="icon" href="https://github.com/JillFerence/ArchiTech" aria-label="ArchiTech GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                    <h1 class="heading">ArchiTech - International Architectural Style Classification with Grad-CAM</h1>
+                    <p class="languages">Machine Learning & Computer Vision</p>
+                    <p class="text project-description">
+                        ArchiTech is an image classifier designed to identify 45 architectural styles.
+                        It uses Grad-CAM to provide visual explanations, making architecture classification intuitive and interactive.
+                    </p>
+                    <p class="languages">Python, Javascript, HTML, CSS, PyTorch, NumPy, Matplotlib, Google Colab, Visual Studio Code</p>
+                </div>
+            </div>
+            <!-- Project 3: QRConnect -->
+            <div class="project-card" data-category="software">
+                <div class="project-media">
+                    <video src="assets/projects/qr-connect-media.mp4" autoplay muted loop playsinline controls></video>
+                </div>
+                <div class="project-info">
+                    <a class="icon" href="https://github.com/JillFerence/QRConnect" aria-label="QRConnect GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                    <h1 class="heading">QRConnect - QR Code Event Check-In System</h1>
+                    <p class="languages">Mobile Application Development</p>
+                    <p class="text project-description">
+                        QRConnect is an Android application designed to streamline event management by enabling attendees to check in using QR codes on their mobile devices. 
+                        With QRConnect, organizers can effortlessly track attendance, manage event details, and send notifications in real time.
+                    </p>
+                    <p class="languages">Java, Firestore, Android Studio</p>
+                </div>
+            </div>
+            <!-- Project 4: Website -->
+            <div class="project-card" data-category="web">
+                <div class="project-media">
+                    <video src="assets/projects/website.mp4" autoplay muted loop playsinline ></video>
+                </div>
+                <div class="project-info">
+                    <a class="icon" href="https://github.com/JillFerence/JillFerence.github.io" aria-label="Algorithm Visualizer GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                    <h1 class="heading">Personal Website</h1>
+                    <p class="languages">Web Development</p>
+                    <p class="text project-description">
+                        My portfolio website highlights my computer science projects, technical skills, and creative interests. 
+                        It acts as an interactive resume and a platform to showcase my experience and passion across multiple areas of computer science, including software engineering, machine learning, and computer vision.
+                    <p class="languages">HTML, CSS, Javascript, Visual Studio Code</p>
+                </div>
+            </div>
+            <!-- Project 5: Library Management System -->
+            <div class="project-card" data-category="database">
+                <div class="project-media">
+                    <img src="assets/projects/library.png" autoplay muted loop playsinline ></video>
+                </div>
+                <div class="project-info">
+                    <a class="icon" href="https://github.com/JillFerence/Library-Management-System" aria-label="Algorithm Visualizer GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                    <h1 class="heading">Library Management System</h1>
+                    <p class="languages">Database Management</p>
+                    <p class="text project-description">
+                        A library management system built with Python to handle various library functions. 
+                        SQL is used to handle all essential database operations, including member login authentication, searching for books, borrowing books, returning books, tracking due dates, and managing penalties. 
+                    <p class="languages">Python, SQL, Visual Studio Code</p>
+                </div>
+            </div>
+            <!-- Project 6: Algorithm Visualizer -->
+            <div class="project-card" data-category="other">
+                <div class="project-media">
+                    <video src="assets/projects/algorithm-visualizer.mp4" autoplay muted loop playsinline ></video>
+                </div>
+                <div class="project-info">
+                    <a class="icon" href="https://github.com/JillFerence/Algorithm-Visualizer" aria-label="Algorithm Visualizer GitHub"><ion-icon name="logo-github"></ion-icon></a>
+                    <h1 class="heading">Algorithm Visualizer</h1>
+                    <p class="languages">Algorithm Development</p>
+                    <p class="text project-description">
+                        Algorithm Visualizer is a RISC-V assembly-based tool designed to demonstrate the insertion sort algorithm visually. 
+                        Built on the RARS simulator, the visualizer sorts a list of integers and represents them with colour-coded bars, distinguishing between positive and negative numbers easily.
+                    </p>
+                    <p class="languages">RISC-V Assembly, RARS</p>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="projects" id="projects">
             <div class="section-heading">Projects</div>
             <div class="project-grid">
 
-                <!-- Project item 1 -->
                 <div class="project-item">
                     <img src="assets/img/website.jpg" alt="Personal Website Image" class="project-modal-trigger1" />
                     <h1 class="heading">Personal Website</h1>
                     <p class="subheading">Web Development</p>
                 </div>
-                <!-- Project item 2 -->
+
                 <div class="project-item">
                     <img src="assets/img/qrconnect.png" alt="QRConnect App Image" class="project-modal-trigger2" />
                     <h1 class="heading">QRConnect</h1>
                     <p class="subheading">Android App Development</p>
                 </div>
-                <!-- Project item 7 -->
+
                 <div class="project-item">
                     <img src="assets/img/panosis.png" alt="PanOSIS Image" class="project-modal-trigger7" />
                     <h1 class="heading">PanOSIS</h1>
                     <p class="subheading">Visual Computing</p>
                 </div>
-                <!-- Project item 3 -->
-                <!-- <div class="project-item">
+
+                <div class="project-item">
                     <img src="assets/img/poissonblend.png" alt="PoissonBlend Image" class="project-modal-trigger3" />
                     <h1 class="heading">PoissonBlend</h1>
                     <p class="subheading">Visual Computing</p>
-                </div> -->
-                <!-- Project item 6 -->
+                </div> 
+
                 <div class="project-item">
                     <img src="assets/img/architech.jpg" alt="ArchiTech App Image" class="project-modal-trigger6" />
                     <h1 class="heading">ArchiTech</h1>
                     <p class="subheading">Visual Computing</p>
                 </div>
-                <!-- Project item 4 -->
+
                 <div class="project-item">
                     <img src="assets/img/library.jpg" alt="Library Management System Image" class="project-modal-trigger4" />
                     <h1 class="heading">Library Management System</h1>
                     <p class="subheading">Database Management</p>
                 </div>
-                <!-- Project item 5 -->
+
                 <div class="project-item">
                     <img src="assets/img/algorithm.jpg" alt="Algorithm Visualizer Image" class="project-modal-trigger5" />
                     <h1 class="heading">Algorithm Visualizer</h1>
@@ -361,7 +469,6 @@
                 </div>
             </div>
 
-            <!-- Modal popup for project item 1 -->
             <div id="project-modal1" class="modal">
                 <div class="modal-content">
                     <img src="assets/img/website-modal.jpg" alt="Personal Website Modal Image" />
@@ -379,7 +486,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Modal popup for project item 2 -->
+
             <div id="project-modal2" class="modal">
                 <div class="modal-content">
                     <img src="assets/img/qrconnect-modal.png" alt="QRConnect App Modal Image" />
@@ -397,7 +504,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Modal popup for project item 3 -->
+
             <div id="project-modal3" class="modal">
                 <div class="modal-content">
                     <img src="assets/img/poissonblend-modal.png" alt="PoissonBlend Modal Image" />
@@ -415,7 +522,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Modal popup for project item 4 -->
+
             <div id="project-modal4" class="modal">
                 <div class="modal-content">
                     <img src="assets/img/library-modal.png" alt="Library Management System Modal Image" />
@@ -433,7 +540,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Modal popup for project item 5 -->
+
             <div id="project-modal5" class="modal">
                 <div class="modal-content">
                     <img src="assets/img/algorithm-modal.png" alt="Algorithm Visualizer Modal Image" />
@@ -451,7 +558,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Modal popup for project item 6 -->
+
             <div id="project-modal6" class="modal">
                 <div class="modal-content">
                     <img src="assets/img/architech-modal.jpg" alt="ArchiTech Modal Image" />
@@ -469,7 +576,7 @@
                     </div>
                 </div>
             </div>
-            <!-- Modal popup for project item 7 -->
+
             <div id="project-modal7" class="modal">
                 <div class="modal-content">
                     <img src="assets/img/panosis-modal.png" alt="PanOSIS Modal Image" />
@@ -487,7 +594,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
         <!-- ============================================= -->
         <!-- INTERESTS -->

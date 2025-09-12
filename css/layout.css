@@ -438,7 +438,103 @@
     background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
     text-align: center;
     padding-bottom: 100px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;  
+    gap: 50px;               
+    padding: 60px 20px;
 }
+
+/* Project filter bar */
+.project-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    background: rgba(255,255,255,0.03); 
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    border-radius: 20px;
+  }
+  
+  /* Project buttons */
+  .filter-btn {
+    border: none;
+    background: transparent;
+    padding: 8px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform .12s ease, background-color .12s ease, color .12s ease;
+    color: var(--text-muted, #cfcfcf);
+    letter-spacing: .2px;
+  }
+  
+  .filter-btn:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.08);
+  }
+  
+  .filter-btn.active {
+    color: var(--accent-fore, #fff);
+    background: linear-gradient(90deg, rgba(56,189,248,0.12), rgba(16,185,129,0.06));
+    box-shadow: 0 6px 18px rgba(16,185,129,0.06);
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+
+#projects .project-card {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    flex-direction: column;  
+    gap: 20px;  
+}
+  
+.project-media video, 
+.project-media img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    position: relative;
+    background: var(--white);
+    z-index: 9;
+}
+  
+#projects .project-info {
+    position: relative;
+    padding: 20px;
+    background: var(--transparent-background);
+    border-radius: 20px;
+    z-index: 9;
+}   
+
+.project-info .icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+    transition: color 0.3s ease;
+}
+
+/* Projects page */
+/*#projects {
+    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
+    text-align: center;
+    padding-bottom: 100px;
+}*/
 
 /* Project headings */
 #projects h1{
@@ -460,6 +556,11 @@
 #projects .subheading{
     color: var(--grey);
     font-size: 1rem;
+}
+
+#projects .project-info .heading{
+    padding-right: 50px;
+    padding-left: 50px;
 }
 
 /* Projects grid */
