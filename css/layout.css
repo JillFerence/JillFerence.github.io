@@ -715,6 +715,11 @@
     padding-top: 10px;
 }
 
+#interests .details {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
 #interests .subheading{
     color: var(--grey);
     font-size: 1rem;
