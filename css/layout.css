@@ -308,8 +308,8 @@
 }
   
 #skills .icon {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     object-fit: contain;
     border-radius: 0;
 }
