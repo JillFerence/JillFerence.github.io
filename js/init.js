@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const filter = btn.getAttribute('data-filter');
         projects.forEach(p => {
         if (filter === 'all' || p.getAttribute('data-category') === filter) {
-            p.style.display = 'block';
+            p.style.display = 'flex';
         } 
         else {
             p.style.display = 'none';
