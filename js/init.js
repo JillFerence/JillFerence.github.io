@@ -99,6 +99,32 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     /* ============================================= */
+    /* PROJECTS FILTER */
+    /* ============================================= */
+
+    const buttons = document.querySelectorAll('.filter-btn');
+    const projects = document.querySelectorAll('.project-card');
+
+    buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Update active button
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+        projects.forEach(p => {
+        if (filter === 'all' || p.getAttribute('data-category') === filter) {
+            p.style.display = 'block';
+        } 
+        else {
+            p.style.display = 'none';
+        }
+        });
+    });
+    });
+
+
+    /* ============================================= */
     /* PROJECTS MODALS */
     /* ============================================= */
 
