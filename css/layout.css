@@ -587,12 +587,76 @@
 }
 
 /* ============================================= */
+/* INTERESTS */
+/* ============================================= */
+
+/* Interests page */
+#interests {
+    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* Interests headings */
+#interests h1{
+    text-align: center !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#interests .section-heading{
+    color: var(--white);
+}
+
+#interests .art-grid .heading{
+    color: var(--white);
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+#interests .subheading{
+    color: var(--grey);
+    font-size: 1rem;
+}
+
+/* Interests grid */
+#interests .art-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    margin: 20px auto;
+    max-width: 60%;
+}
+
+#interests .art-grid img {
+    width: 100%;
+    min-width: 300px;
+    min-height: 400px;
+    max-width: 300px;
+    max-height: 400px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border-radius: 10px;
+}
+
+#interests .art-grid img:hover {
+    transform: scale(1.05);
+}
+
+#interests .art-item {
+    text-align: center; 
+    z-index: 9;
+}
+
+/* ============================================= */
 /* CONTACT */
 /* ============================================= */
 
 /* Contact layout */
 .contact {
-    background: linear-gradient(to bottom, var(--blue-background), var(--green-background));
+    background: linear-gradient(to bottom, var(--green-background), var(--blue-background));
     padding-bottom: 100px;
     position: relative;
 }
@@ -645,7 +709,7 @@
 /* ============================================= */
 
 .footer {
-    background: var(--green-background);
+    background: var(--blue-background);
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
