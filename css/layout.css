@@ -542,6 +542,16 @@
     margin-right: 10px;
 }
 
+#projects .project-description{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#projects .languages{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 #projects .section-heading{
     color: var(--white);
 }
@@ -558,8 +568,8 @@
 }
 
 #projects .project-info .heading{
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 /* Projects grid */

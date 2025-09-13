@@ -54,7 +54,6 @@
         position: center;
     }
 
-    /* About sections */
     #typewriter {
         min-height: 9.5em; 
     }
@@ -99,9 +98,22 @@
     }
     
     /* Project Section */
+    #projects .project-info .heading{
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+
     #projects .project-grid {
         grid-template-columns: 1fr;
         max-width: 90%;
+    }
+
+    .project-filters {
+        width: 90%;
+    }
+
+    #projects .project-card {
+        width: 90%;
     }
 
     /* Interests Section */
@@ -210,6 +222,15 @@
     }
 
     /* Projects Section */
+
+    .project-filters {
+        width: 90%;
+    }
+
+    #projects .project-card {
+        width: 90%;
+    }
+
     #projects .project-grid {
         grid-template-columns: 1fr;
         max-width: 80%;
@@ -307,6 +328,14 @@
     }
 
     /* Project Section */
+    .project-filters {
+        width: 90%;
+    }
+
+    #projects .project-card {
+        width: 90%;
+    }
+    
     #projects .project-grid {
         grid-template-columns: 1fr 1fr;
         max-width: 80%;
