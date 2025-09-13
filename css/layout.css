@@ -329,9 +329,8 @@
 
 #skills .heading{
     color: var(--white);
-    padding-top: 10px;
-    padding-bottom: 25px;
     text-align: center;
+    padding: 25px;
 }
 
 #skills .subheading{
