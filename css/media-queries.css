@@ -34,6 +34,9 @@
     }
 
     /* About Section */
+    #about .about-section {
+        max-width: 90%;
+    }
     #about .about-container {
         display: flex;
         flex-direction: column; 
@@ -49,6 +52,11 @@
         border-radius: 50%;
         margin-bottom: 25px;
         position: center;
+    }
+
+    /* About sections */
+    #typewriter {
+        min-height: 9.5em; 
     }
 
     #about .about-text{
@@ -410,7 +418,7 @@
     }
 
     /* About Section */
-    #about .about-container {
+    #about .about-section {
         max-width: 75%;
     }
 
