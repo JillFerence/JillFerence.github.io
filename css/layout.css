@@ -492,30 +492,31 @@
     max-width: 900px;
     border-radius: 20px;
     overflow: hidden;
-    background-color: transparent;
+    background-color: var(--transparent-background);;
     position: relative;
     display: flex;
     justify-content: center; 
     align-items: center;     
     flex-direction: column;  
-    gap: 20px;  
+    border-radius: 20px;
 }
   
 .project-media video, 
 .project-media img {
     width: 100%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 40px;
     display: block;
     position: relative;
-    background: var(--white);
+    background: transparent;
     z-index: 9;
+    padding: 20px;
 }
   
 #projects .project-info {
     position: relative;
-    padding: 40px 20px 20px;
-    background: var(--transparent-background);
+    padding: 20px;
+    background: transparent;
     border-radius: 20px;
     z-index: 9;
 }   
@@ -568,8 +569,8 @@
 }
 
 #projects .project-info .heading{
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 /* Projects grid */
